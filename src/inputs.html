@@ -1,0 +1,117 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Inputs</title>
+		<link href="../dist/output.css" rel="stylesheet" />
+	</head>
+
+	<body class="bg-black flex flex-col gap-10 overflow-hidden">
+		<header>
+			<nav
+				class="flex justify-center items-center gap-10 w-screen h-[70px] bg-gradient-to-b from-indigo-500 to-blue-700"
+			>
+				<a
+					href="./buttons.html"
+					class="font-inter font-xl font-medium leading-normal text-neutral-50"
+					>Buttons</a
+				>
+				<a
+					href="./inputs.html"
+					class="font-inter font-xl font-medium leading-normal text-neutral-50"
+					>Input Components</a
+				>
+				<a
+					href="./cards.html"
+					class="font-inter font-xl font-medium leading-normal text-neutral-50"
+					>Cards</a
+				>
+				<a
+					href="./tweet.html"
+					class="font-inter font-xl font-medium leading-normal text-neutral-50"
+					>Tweet</a
+				>
+			</nav>
+		</header>
+		<!-- Default -->
+		<div class="flex gap-20 items-center m-10">
+			<p class="text-neutral-50 text-xl">Default</p>
+			<div
+				class="relative flex w-[426px] px-3 py-4 border border-neutral-500 border-solid rounded-[4px]"
+			>
+				<input
+					type="text"
+					placeholder="label"
+					class="w-full h-full placeholder-neutral-500 bg-transparent font-inter text-neutral-50 font-normal leading-normal text-xl outline-none"
+				/>
+
+				<div class="absolute top-[-9px] left-[19px] px-1 bg-black text-neutral-500 text-xs">
+					Label
+				</div>
+			</div>
+		</div>
+
+		<!-- Selected -->
+		<div class="flex gap-20 items-center ml-10">
+			<p class="text-neutral-50 text-xl">Selected</p>
+			<div
+				class="group relative flex w-[426px] px-3 py-4 border border-neutral-500 border-solid rounded-[4px] focus-within:border-twitter-blue-default"
+			>
+				<input
+					type="text"
+					placeholder="label"
+					class="group flex-1 w-full h-full placeholder-neutral-500 bg-transparent font-inter text-neutral-50 font-normal leading-normal text-xl outline-none"
+				/>
+
+				<div
+					class="group absolute top-[-9px] left-[19px] px-1 bg-black text-neutral-500 text-xs group-focus-within:text-twitter-blue-default"
+				>
+					Label
+				</div>
+
+				<img
+					src="/public/images/icon.svg"
+					class="group invisible group-focus-within:visible"
+				/>
+			</div>
+		</div>
+
+		<!-- transparent textbox -->
+		<div class="ml-10 flex items-center w-[482px] gap-3 bg-transparent mt-10">
+			<img src="/public/images/user-avatar.svg" alt="user-avatar" />
+			<input
+				type="text"
+				placeholder="What's happening?!"
+				class="w-full h-full placeholder-neutral-600 bg-transparent font-inter text-neutral-50 caret-twitter-blue-default font-normal leading-normal text-xl outline-none"
+			/>
+		</div>
+
+		<!-- Search Bar -->
+		<div
+			class="group ml-10 flex justify-center items-center gap-[15px] px-4 py-2.5 w-[348px] h-[39px] bg-searchbar-fill rounded-full mt-10 border border-searchbar-fill focus-within:border-twitter-blue-default"
+		>
+			<svg
+				class="group m-[1.6px] group-focus-within:stroke-twitter-blue-default"
+				width="17"
+				height="17"
+				viewBox="0 0 17 17"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g id="Group">
+					<path
+						id="Vector"
+						d="M16.0446 15.2054L13.1471 12.3079C14.1961 11.065 14.8334 9.46109 14.8334 7.70834C14.8334 3.77375 11.643 0.583336 7.70837 0.583336C3.77379 0.583336 0.583374 3.77375 0.583374 7.70834C0.583374 11.6429 3.77379 14.8333 7.70837 14.8333C9.46192 14.8333 11.065 14.1968 12.3064 13.1471L15.2039 16.0446C15.3202 16.1602 15.473 16.2188 15.6235 16.2188C15.7739 16.2188 15.9282 16.161 16.043 16.0446C16.2766 15.8126 16.2766 15.4374 16.0446 15.2054ZM1.77087 7.70834C1.77087 4.43479 4.43483 1.77084 7.70837 1.77084C10.9819 1.77084 13.6459 4.43479 13.6459 7.70834C13.6459 10.9819 10.9819 13.6458 7.70837 13.6458C4.43483 13.6458 1.77087 10.9819 1.77087 7.70834Z"
+						fill="#737373"
+					/>
+				</g>
+			</svg>
+
+			<input
+				type="text"
+				placeholder="Search"
+				class="group outline-none w-full bg-transparent font-inter text-base caret-twitter-blue-default group-focus-within:placeholder-neutral-50"
+			/>
+		</div>
+	</body>
+</html>

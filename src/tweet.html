@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tweet</title>
+		<link href="../dist/output.css" rel="stylesheet" />
+	</head>
+	<body class="bg-neutral-1000 h-screen flex justify-center items-center">
+		<header class="absolute top-0">
+			<nav
+				class="flex justify-center items-center gap-10 w-screen h-[70px] bg-gradient-to-b from-indigo-500 to-blue-700"
+			>
+				<a
+					href="./buttons.html"
+					class="font-inter font-xl font-medium leading-normal text-neutral-50"
+					>Buttons</a
+				>
+				<a
+					href="./inputs.html"
+					class="font-inter font-xl font-medium leading-normal text-neutral-50"
+					>Input Components</a
+				>
+				<a
+					href="./cards.html"
+					class="font-inter font-xl font-medium leading-normal text-neutral-50"
+					>Cards</a
+				>
+				<a
+					href="./tweet.html"
+					class="font-inter font-xl font-medium leading-normal text-neutral-50"
+					>Tweet</a
+				>
+			</nav>
+		</header>
+		<div
+			class="flex items-start gap-4 w-[598px] px-4 py-2 bg-neutral-1000 border-b border-neutral-700"
+		>
+			<!-- DP -->
+			<img src="/public/images/profile-photo.png" alt="" class="flex-shrink-0 rounded-full" />
+			<!-- Content -->
+			<div class="flex flex-col gap-1">
+				<!-- Name and @handle -->
+				<div class="flex gap-2">
+					<h1 class="font-inter font-base font-medium leading-normal text-neutral-50">
+						Name
+					</h1>
+					<p class="font-inter font-base font-normal leading-normal text-neutral-500">
+						@handle • 10h
+					</p>
+				</div>
+				<!-- Real text -->
+				<div class="self-stretch">
+					<p class="font-inter font-base font-normal leading-normal text-neutral-50">
+						Writing gets easier after the first sentence. <br /><br />
+						Lifting gets easier after the first set. <br /><br />
+						People think and think and think until they finally decide to act. Their
+						attention shifts from internal to external, and the difficulty they created
+						in their mind vanishes.
+					</p>
+				</div>
+				<!-- Icons and Stuff -->
+				<div class="flex justify-between items-center self-stretch py-3">
+					<!-- Comments -->
+					<div class="flex gap-[5px]">
+						<img src="/public/images/comment.svg" alt="comment" />
+						<p
+							class="font-inter text-[14px] font-normal leading-normal text-neutral-500"
+						>
+							20
+						</p>
+					</div>
+					<!-- Retweets -->
+					<div class="flex gap-[5px]">
+						<img src="/public/images/retweet.svg" alt="retweets" />
+						<p
+							class="font-inter text-[14px] font-normal leading-normal text-neutral-500"
+						>
+							270
+						</p>
+					</div>
+					<!-- Likes -->
+					<div class="flex gap-[5px]">
+						<img src="/public/images/heart.svg" alt="likes" />
+						<p
+							class="font-inter text-[14px] font-normal leading-normal text-neutral-500"
+						>
+							1715
+						</p>
+					</div>
+					<!-- Views -->
+					<div class="flex gap-[5px]">
+						<img src="/public/images/views.svg" alt="views" />
+						<p
+							class="font-inter text-[14px] font-normal leading-normal text-neutral-500"
+						>
+							100K
+						</p>
+					</div>
+					<!-- Share -->
+					<div class="flex gap-[5px]">
+						<img src="/public/images/share.svg" alt="share" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer
+			class="flex justify-center items-center gap-10 w-screen h-14 bg-gradient-to-t from-indigo-500 to-blue-700"
+		>
+			<p class="text-neutral-50 font-inter">
+				Successfully burnt my eyes for hours on end nitpicking over things...
+			</p>
+		</footer>
+	</body>
+</html>
